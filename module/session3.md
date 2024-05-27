@@ -113,11 +113,13 @@ These folders are accessible via the File Manager in the Bioimage ANalysis Deskt
 
 ## Research data management
 ### ManGO
-ManGO is 
+ManGO is developped by KU Leuven as a middelware on the top of iRODS (an open source data management software). 
+ManGO is data agnostic and used in different fields (exact science, life science, humanities) and implemented on VSC, University of Wageningen and National Cancer institute in the Netherlands.
+Thanks to ManGO, the metadata can be extracted automatically through workflows, the metadata can be added through schema and archived with ease.  
 ### DataHub
-Solution proviede 
+Solution provided by Elixir and VIB (for more info, contact Datacore)
 ### GitHub
+Code should shared on GitHub (Bic code, Bic training and ...)
 
-<!-- style="color: magenta ;" --> To be developed
+<!-- style="color: magenta ;" --> 
 
-if there is already a concrete way
