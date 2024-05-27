@@ -64,19 +64,19 @@ e.g., located in `/dodrio/scractch/projects/2024_300/USERNAME/qupath_project`
 
 #### Add a image into the project
 Image are located in `/dodrio/scratch/projects/2024_300/training/qupath/`
-![Import image](/images/qupath_00_import.png
+![Import image](/images/qupath/qupath_00_import.png
  'Import image')
 
 #### Create a new class tissue
-![Create new class](/images/qupath_01_create_class.png
+![Create new class](/images/qupath/qupath_01_create_class.png
  'Create new class')
 
 #### Create a new pixel classififer to detect the tissue
-![Tissue detection](/images/qupath_02_parameters_tissue_detection.png
+![Tissue detection](/images/qupath/qupath_02_parameters_tissue_detection.png
  'Tissue detection')
 
 #### Positive cell detection
-![Positive cell detection](/images/qupath_03_parameters_segmentation.png
+![Positive cell detection](/images/qupath/qupath_03_parameters_segmentation.png
  'Positive cell detection')
 
 ### CellPose
