@@ -64,19 +64,19 @@ e.g., located in `/dodrio/scractch/projects/2024_300/USERNAME/qupath_project`
 
 #### Add a image into the project
 Image are located in `/dodrio/scratch/projects/2024_300/training/qupath/`
-![Import image](/images/qupath/qupath_00_import.png
+![Import image](/images/napari/qupath_00_import.png
  'Import image')
 
 #### Create a new class tissue
-![Create new class](/images/qupath/qupath_01_create_class.png
+![Create new class](/images/napari/qupath_01_create_class.png
  'Create new class')
 
 #### Create a new pixel classififer to detect the tissue
-![Tissue detection](/images/qupath/qupath_02_parameters_tissue_detection.png
+![Tissue detection](/images/napari/qupath_02_parameters_tissue_detection.png
  'Tissue detection')
 
 #### Positive cell detection
-![Positive cell detection](/images/qupath/qupath_03_parameters_segmentation.png
+![Positive cell detection](/images/napari/qupath_03_parameters_segmentation.png
  'Positive cell detection')
 
 ### CellPose
@@ -96,12 +96,12 @@ cellpose
 #### Open and process a 2D  image
 Drag and Drop the tif image located at `/dodrio/scratch/projects/2024_300/training/cellpose/hdab_fat_cells_2d.tif` in cellpose
 
-![CellPose 2D](/images/cellpose/cellpose_2d.png)
+![CellPose 2D](/images/napari/cellpose_2d.png)
 
 #### Open and process a 3D  image
 Drag and Drop the tif image located at `/dodrio/scratch/projects/2024_300/training/cellpose/3d.tif` in cellpose
 
-![CellPose 3D](/images/cellpose/cellpose_3d.png)
+![CellPose 3D](/images/napari/cellpose_3d.png)
 
 > [!WARNING]
 > As you may have noticed, on a small screen, since cellpose version 2.2 is not resizable with a scrollbar, it is sometimes not possible to view the scrollbar to change the Z position.
