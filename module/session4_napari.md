@@ -171,7 +171,31 @@ Dataset are located in : `https://juglab.github.io/napari-n2v/` and a sub-folder
   
     ![N2V training](/images/napari/03_napari_n2v.png 'N2V Training')
 
-  
+## 3- Napari - Empanada
 
-          - 
+empanada-napari allow you to run Panoptic segmentation algorithms for 2D and 3D electron microscopy in napari to e.g. segment mitochondria, E.R., see [website](
+https://empanada.readthedocs.io/en/latest/tutorials/2d_tutorial.html#d-inference-tutorial)
+
+- Start napari via the menu `Application › napari 4.0.19 devbio empanada assistant`
+
+- Start the plugin `Plugins › empanada-napari › 2D Inference (Parameter Testing)`
+
+- Open the folder `File › Open Folder...` and select the folder containing the images for empanada located at `/dodrio/scratch/projects/2024_300/training/empanada/`
+
+    ![Napari open folder](/images/napari/napari_open_folder.png 'Napari open folder')
+
+    
+- Leave the default parameters:
+
+  ![Napari empanada](/images/napari/01_napari_empanada.png 'Napari empanada')
+
+- Click on `Run 2D inference`
+> [!Warning]
+> It will download the mitonet model in `/dodrio/scratch/users/vscxxxxx/.empanada/MitoNet_v1.pth`, which is around 221MB, so it will take some space on the limted space you have on your personal space.
+
+At the end you should the that the images have been segmented using the mitonet_v1 model
+      ![Napari empanada](/images/napari/02_napari_empanada.png 'Napari empanada')
+
+
+
 
