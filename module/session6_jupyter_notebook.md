@@ -6,11 +6,14 @@ Select Jupyter notebook or Jupyterlab with the following specifications:
 ![image](https://github.com/vib-bic-training/HPC_training_bioimaging_1/assets/103046100/22283052-525a-45b6-a9c7-16a9d0f5b56c)
 ![image](https://github.com/vib-bic-training/HPC_training_bioimaging_1/assets/103046100/f5a5562d-a972-4f75-a8f2-5dd203158581)
 
+Required modules:
+- `module load n2v/3.5.2-foss-2022a-CUDA-11.7.0`
+- `module load matplotlib/3.5.2-foss-2022a`
 
 ## Where to find the notebooks for this demo
 - https://github.com/vib-bic-training/HPC_training_bioimaging_1/tree/main/code/notebooks
 
-Download both of them an copy them to
+Download both of them an copy them to `/dodrio/scratch/projects/2024_300/YOUR_NAME/`
 
 ## Additional resources
 #### BIC code
