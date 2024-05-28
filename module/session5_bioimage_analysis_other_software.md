@@ -26,7 +26,7 @@ link:     https://raw.githubusercontent.com/vibbits/material-liascript/master/vi
 
 @orcid: [@0](@1)<!--class="orcid-logo-for-author-list"-->
 
-# Session 5 - BioImage Analysis (non-Napari)
+# Session 5 - BAND, BioImage Analysis (non-Napari)
 
 ## QuPath
 
