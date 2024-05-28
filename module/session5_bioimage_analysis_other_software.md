@@ -27,9 +27,7 @@ link:     https://raw.githubusercontent.com/vibbits/material-liascript/master/vi
 
 @orcid: [@0](@1)<!--class="orcid-logo-for-author-list"-->
 
-# Napari plugins and other software
-
-## Napari plugins
+# BioImage Analysis (non-Napari)
 
 ## Other software
 
