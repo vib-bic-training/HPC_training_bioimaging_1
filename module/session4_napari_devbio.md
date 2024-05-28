@@ -1,4 +1,4 @@
-# Session 4: Napari
+# Session 4 - Napari
 
 
 <!--
