@@ -10,6 +10,7 @@ Select Jupyter notebook or Jupyterlab with the following specifications:
 ## Where to find the notebooks for this demo
 - https://github.com/vib-bic-training/HPC_training_bioimaging_1/tree/main/code/notebooks
 
+Download both of them an copy them to
 
 ## Additional resources
 #### BIC code
