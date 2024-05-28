@@ -80,6 +80,7 @@ Start via the menu `Application › napari 4.0.19 devbio empanada assistant`
  'copy/paste')
 > 
 ### Interface
+1. Load the demo image : `File › Open Sample › napari builtins › Cells (3D+2Ch)`
 ![Napari Interface](/images/napari/05_devbio_napari_interface.png
  'Napari Interface')
 
@@ -87,17 +88,16 @@ Start via the menu `Application › napari 4.0.19 devbio empanada assistant`
 https://github.com/tatianawoller/Training_prep_290524/blob/main/images/napari/06_devbio_create_label.mp4
 ![Napari Interface](/images/napari/06_devbio_create_label_02.gif
  'Napari Interface')
-
+<!-- 
 ### Install Plugins
 - List of available plugins : https://www.napari-hub.org/
 - **>400 plugins** are currently available
 
 ![Napari Plugins](/images/napari/07_devbio_napari_plugin.png
  'Napari Plugins')
-
+-->
 ### Using Devbio assistant - Nuclei 3d Segmentation
 
-1. Load the demo image : `File › Open Sample › napari builtins › Cells (3D+2Ch)`
 2. Start the Assistant : Tools › Utilities › Assistant
 ![Napari Plugins](/images/napari/08_devbio_napari_assistant.png
  'Napari Plugins')
@@ -125,4 +125,35 @@ https://github.com/tatianawoller/Training_prep_290524/blob/main/images/napari/06
 ![Exclude labels on edge](/images/napari/15_devbio_napari_segmentation_result_overview.png
  'Exclude labels on edge')
 
- 
+ ## 2- Napari n2v
+
+N2V is a sef-supervised denoising algorithm allowing removing pixel-independent noise, [more info]([https://juglab.github.io/napari-n2v/)
+
+- Dataset
+Dataset are located in : `https://juglab.github.io/napari-n2v/` and a sub-folder `training` will be used to train a denoising model.
+
+- Start
+Start via the menu `Application › napari 4.0.19 devbio empanada assistant`
+
+- Drag and drop the images located in training folder into napari. Keep only 2 and rename one to be `training` and the other one to be `validation`
+
+- Start the plugin `Plugins › napari-n2v › N2V Train`
+
+- Train a model:
+  
+![N2V training](/images/napari/01_napari_n2v.png 'N2V Training
+
+| Parameters    | Value |
+| -------- | ------- |
+| Train  | training    |
+| Validation | validation  |
+| Axes | XY |
+| N epochs | 20 |
+| N steps | 200 |
+| Batch size | 16 |
+| Patch XY | 64 |
+
+Click on `Training` and follow the evolution of the loss function along the different epoch
+
+![N2V training](/images/napari/01_napari_n2v_b.png 'N2V Training
+
