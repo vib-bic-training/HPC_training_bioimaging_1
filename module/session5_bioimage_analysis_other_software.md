@@ -27,24 +27,22 @@ link:     https://raw.githubusercontent.com/vibbits/material-liascript/master/vi
 
 @orcid: [@0](@1)<!--class="orcid-logo-for-author-list"-->
 
-# BioImage Analysis (non-Napari)
+# Session 5 BioImage Analysis (non-Napari)
 
-## Other software
+## QuPath
 
-### QuPath
-
-#### Start a terminal
-![Open a terminal](/images/napari/01_devbio_terminal.png 'Terminal')
-
-#### Load the QuPath module
-```bash
-module purge
-module load QuPath/0.5.0-GCCcore-12.3.0-Java-17
-```
-#### Start QuPath
-```bash
-QuPath
-```
+Start it via the menu `Application › QuPath 0.5.0 `
+> [!TIP]
+> Alternativelly, you can start it via the terminal, then locad manually the module and start QuaPth
+> - Load the module
+> ```bash
+> module purge
+> module load QuPath/0.5.0-GCCcore-12.3.0-Java-17
+> ```
+> - Start QuPath
+> ```bash
+> QuPath
+> ```
 
 > [!TIP]
 > Copy paste from outside of `Bioimage ANalysis Desktop` to inside it
