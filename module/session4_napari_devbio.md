@@ -44,27 +44,41 @@ link:     https://raw.githubusercontent.com/vibbits/material-liascript/master/vi
 ![BAND configuration](/images/band/band.png
  'BAND configuration')
 
-## Napari devbio 
+## Access to the pre-install software
 
+Most of the pre-installed software are accessible via the Menu `Application › BioImage Analysis › ...
+![Menu BioImage Analysis](/images/napari/00_application_bioimage_analysis_menu.png 'Menu BioImage Analysis')
 
-### Start a terminal
-![Open a terminal](/images/napari/01_devbio_terminal.png 'Terminal')
+| Name    | Application |
+| -------- | ------- |
+| napari 4.0.19 devbio empanada  | napari + devbio + empanada    |
+| napari 4.0.19 devbio empanada | napari + devbio + empanada already on the assistant interface     |
+| napari 4.0.19 n2v    | napari [noise2void](https://juglab.github.io/napari-n2v/)    |
 
-### Load the devbio-napari module (in the terminal)
-```bash
-module activate devbio-napari/0.10.1-foss-2022a-CUDA-11.7.0
-```
+## 1- Napari devbio
+
+A bundle of napari plugins useful for 3D+t image processing and analysis for studying developmental biology, developped by Robert Haase and Co, [more info](https://github.com/haesleinhuepf/devbio-napari)
+
+Start via the menu `Application › napari 4.0.19 devbio empanada assistant`
+
+> [!TIP]
+> Alternativelly, you can start it via the terminal, then locad manually the module and start it
+> - Load the module
+> ```bash
+> module purge
+> module activate devbio-napari/0.10.1-foss-2022a-CUDA-11.7.0
+> ```
+> - Start
+> ```bash
+> napari
+> ```
 
 > [!TIP]
 > Copy paste from outside of `Bioimage ANalysis Desktop` to inside it
 > 
 > ![Copy/Paste](/images/napari/03_devbio_copy_paste.png
  'copy/paste')
-
-### Start napari (in the terminal)
-```bash
-napari
-```
+> 
 ### Interface
 ![Napari Interface](/images/napari/05_devbio_napari_interface.png
  'Napari Interface')
