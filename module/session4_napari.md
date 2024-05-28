@@ -132,28 +132,46 @@ N2V is a sef-supervised denoising algorithm allowing removing pixel-independent 
 - Dataset
 Dataset are located in : `https://juglab.github.io/napari-n2v/` and a sub-folder `training` will be used to train a denoising model.
 
-- Start
-Start via the menu `Application › napari 4.0.19 devbio empanada assistant`
+- Training
+  - Start via the menu `Application › napari 4.0.19 devbio empanada assistant`
+  - Drag and drop the images located in training folder into napari. Keep only 2 and rename one to be `training` and the other one to be `validation`
+  - Start the plugin `Plugins › napari-n2v › N2V Train`
+  - Train a model:
+  ![N2V training](/images/napari/01_napari_n2v.png 'N2V Training')
 
-- Drag and drop the images located in training folder into napari. Keep only 2 and rename one to be `training` and the other one to be `validation`
+          | Parameters    | Value |
+          | -------- | ------- |
+          | Train  | training    |
+          | Validation | validation  |
+          | Axes | XY |
+          | N epochs | 20 |
+          | N steps | 200 |
+          | Batch size | 16 |
+          | Patch XY | 64 |
 
-- Start the plugin `Plugins › napari-n2v › N2V Train`
+  - click on `Training` and follow the evolution of the loss function along the different epoch
 
-- Train a model:
+  ![N2V training](/images/napari/01_napari_n2v_b.png 'N2V Training')
+
+  - Save the model: save the model as `Keras` or `Tensorflow` and remember where you save them (name should end with `.zip` for Tensorflow and `.h5` for keras
+
+- Predict :
+  - Copy the dataset to denoise to your directory from `/dodrio/scratch/projects/2024_300/training/n2v/` to `/dodrio/scratch/projects/2024_300/YOUR_NAME/dataset/`
+  - Close the previous plugin
+  - Start the plugin `Plugins › napari-n2v › N2V Predict`
+  - Select `From disk`
+  - Select `Lazy loading`
+  - Choose the path to where the file you want to denoise are located, e.g. `/dodrio/scratch/projects/2024_300/YOUR_NAME/dataset/`
+  - Select the model you saved previously
+  - Click on Predict
+    
+    ![N2V training](/images/napari/02_napari_n2v.png 'N2V Training')
+ 
+  At the end, you should see a preview of the dataset denoised:
   
-![N2V training](/images/napari/01_napari_n2v.png 'N2V Training
+    ![N2V training](/images/napari/03_napari_n2v.png 'N2V Training')
 
-| Parameters    | Value |
-| -------- | ------- |
-| Train  | training    |
-| Validation | validation  |
-| Axes | XY |
-| N epochs | 20 |
-| N steps | 200 |
-| Batch size | 16 |
-| Patch XY | 64 |
+  
 
-Click on `Training` and follow the evolution of the loss function along the different epoch
-
-![N2V training](/images/napari/01_napari_n2v_b.png 'N2V Training
+          - 
 
