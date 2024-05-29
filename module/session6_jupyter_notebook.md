@@ -16,7 +16,7 @@ The notebooks are located in https://github.com/vib-bic-training/HPC_training_bi
 Download both of them and upload them to your local storage on the VSC using the jupyter interface:
 ![Exclude labels on edge](/images/jupyter/02_jupyter_notebooks.png)
 
-Then double click on the notebook `n2v_demo_01_training.ipynb` to open it and edit it to change output_folder:
+Then double click on the notebook `n2v_demo_01_training.ipynb` to open it and edit it to change `output_folder`:
 ```python
 output_folder = '/dodrio/scratch/projects/2024_300/<YOUR_NAME>/nv2' #TO CHANGE
 ```
