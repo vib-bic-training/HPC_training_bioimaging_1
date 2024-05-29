@@ -112,7 +112,7 @@ https://github.com/tatianawoller/Training_prep_290524/blob/main/images/napari/06
 ![Label Closing](/images/napari/11_devbio_napari_assistant_process_label_closing.png
  'Label Closing')
 ### Using segment blobs and things - Cell Segmentation using seeded watershed
-7. Seeded watershed segmentation : `Plugins › segment-blobs-and-things-with-membranes › seeded watershed`
+7. Seeded watershed segmentation : `Plugins › napari-segment-blobs-and-things-with-membranes › seeded watershed`
 ![Seeded Watershed](/images/napari/12_devbio_napari_segment-blobs-and-things_seeded-watershed.png
  'Seeded watershed')
 
