@@ -13,7 +13,11 @@ Required modules:
 ## Where to find the notebooks for this demo
 - https://github.com/vib-bic-training/HPC_training_bioimaging_1/tree/main/code/notebooks
 
-Download both of them an copy them to `/dodrio/scratch/projects/2024_300/YOUR_NAME/`
+Download both of them and store them locally.
+
+## Load the jupyter notebook
+
+
 
 ## Additional resources
 #### BIC code
