@@ -28,26 +28,16 @@ link:     https://raw.githubusercontent.com/vibbits/material-liascript/master/vi
 
 # Session 5 - BAND, BioImage Analysis (non-Napari)
 
+> [!TIP]
+> DISCLAIMER
+> 
+> It takes a bit of time the first time after login to start the software in general, so be patient
+> 
+
 ## QuPath
 
-Start it via the menu `Application › QuPath 0.5.0 `
-> [!TIP]
-> Alternativelly, you can start it via the terminal, then locad manually the module and start QuaPth
-> - Load the module
-> ```bash
-> module purge
-> module load QuPath/0.5.0-GCCcore-12.3.0-Java-17
-> ```
-> - Start QuPath
-> ```bash
-> QuPath
-> ```
-
-> [!TIP]
-> Copy paste from outside of `Bioimage ANalysis Desktop` to inside it
-> 
-> ![Copy/Paste](/images/qupath_00_copy_paste_module.png
- 'copy/paste')
+#### Start QuPath
+Start it via the menu `Applications › Bioimage analysis › QuPath 0.5.0 `
 
 #### Create a new Project
 `File › Project... › Create project`
@@ -74,32 +64,44 @@ Image are located in `/dodrio/scratch/projects/2024_300/training/qupath/`
 ![Positive cell detection](/images/napari/qupath_03_parameters_segmentation.png
  'Positive cell detection')
 
-### CellPose
+> [!TIP]
+> Alternativelly, you can start it via the terminal, then locad manually the module and start QuaPth
+> - Load the module
+> ```bash
+> module purge
+> module load QuPath/0.5.0-GCCcore-12.3.0-Java-17
+> ```
+> - Start QuPath
+> ```bash
+> QuPath
+> ```
 
-#### Start a terminal
-![Open a terminal](/images/napari/01_devbio_terminal.png 'Terminal')
+> [!TIP]
+> Copy paste from outside of `Bioimage ANalysis Desktop` to inside it
+> 
+> ![Copy/Paste](/images/napari/qupath_00_copy_paste_module.png
+ 'copy/paste')
+ 
 
-#### Load the cellpose module
-```bash
-module purge
-module load Cellpose/2.2.2-foss-2022a-CUDA-11.7.0
-```
-#### Start cellpose
-```bash
-cellpose
-```
+## CellPose
+
+#### Start
+Start it via the menu `Applications › Bioimage analysis › CellPose 2.2.2 CUDA`
+
 #### Open and process a 2D  image
-Drag and Drop the tif image located at `/dodrio/scratch/projects/2024_300/training/cellpose/hdab_fat_cells_2d.tif` in cellpose
+Drag and Drop the tif image located at `/dodrio/scratch/projects/2024_300/training/cellpose/2d/hdab_fat_cells_2d.tif` in cellpose
 
 ![CellPose 2D](/images/napari/cellpose_2d.png)
 
 #### Open and process a 3D  image
-Drag and Drop the tif image located at `/dodrio/scratch/projects/2024_300/training/cellpose/3d.tif` in cellpose
+Drag and Drop the tif image located at `/dodrio/scratch/projects/2024_300/training/cellpose/3d/3d.tif` in cellpose
 
 ![CellPose 3D](/images/napari/cellpose_3d.png)
 
 > [!WARNING]
 > As you may have noticed, on a small screen, since cellpose version 2.2 is not resizable with a scrollbar, it is sometimes not possible to view the scrollbar to change the Z position.
+> 
+> Also, the first time your run cellpose with a model, this one will be downloaded and stored into your personal storage (`/dodrio/scratch/users/vscxxxxx/.cellpose/models/`)(when you see `Downloading: "https://www.cellpose.org/models/cyto2torch_0" to /dodrio/scratch/users/vsc33625/.cellpose/models/cyto2torch_0` in the terminal)
 
 #### Batch processing
 -  View the parameters
@@ -214,8 +216,15 @@ Training Arguments:
 ```
 
 #### Run cellpose to process all the images in a folder using similar parameters as the one set using the GUI
+
+- Start the terminal : `Applications › Terminal Emulator`
+
+- FIgure out where you want to store the result. You will have to modify the command below the part (`--savedir /your/personal/storage/`)
+
+- Enter the following command :
+
 ```batch
-[vsc33625@gpu512 ~]$ python -m cellpose --dir /dodrio/scratch/projects/2024_300/training/cellpose/ --use_gpu --pretrained_model cyto2 --chan 2 --chan2 1 --do_3D --diameter 80 --flow_threshold 0.1 --cellprob_threshold -5 --save_tif
+[vsc33625@gpu512 ~]$ python -m cellpose --dir /path/to/personal/storage/3d/ --use_gpu --pretrained_model cyto2 --chan 2 --chan2 1 --do_3D --diameter 80 --flow_threshold 0.1 --cellprob_threshold -5 --save_tif --savedir /your/personal/storage/
 >>>> !NEW LOGGING SETUP! To see cellpose progress, set --verbose
 No --verbose => no progress or info printed
 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████| 25.3M/25.3M [00:03<00:00, 7.65MB/s]
@@ -223,7 +232,22 @@ No --verbose => no progress or info printed
 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████| 25.3M/25.3M [00:06<00:00, 4.39MB/s]
 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 26/26 [00:00<00:00, 302.87it/s]
 ```
+This will save the result into the input directory.
 
 > [!WARNING]
 > As you may have noticed, on a small screen, since cellpose version 2.2 is not resizable with a scrollbar, it is sometimes not possible to view the scrollbar to change the Z position.
+
+
+> [!TIP]
+> Alternativelly, you can start it via the terminal `Applications › Terminal Emulator`
+, then locad manually the module and start CellPose
+> - Load the module
+> ```bash
+> module purge
+> module load Cellpose/2.2.2-foss-2022a-CUDA-11.7.0
+> ```
+> - Start CellPose
+> ```bash
+> cellpose
+> ```
 
