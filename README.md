@@ -1,5 +1,7 @@
 # HPC Training Bio-imaging 
 
+> This material in under active development at the moment
+
 ## [Introduction](module/session0.md)
 
 ## [HPC Infrastructure overview](module/session1.md)
