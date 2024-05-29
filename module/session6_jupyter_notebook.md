@@ -8,7 +8,7 @@ Select **Jupyter notebook** or Jupyterlab (maybe more **Jupyter notebook** since
 ![image](https://github.com/vib-bic-training/HPC_training_bioimaging_1/assets/103046100/f5a5562d-a972-4f75-a8f2-5dd203158581)
 
 Required modules:
-- `module load n2v/3.5.2-foss-2022a-CUDA-11.7.0`
+- `module load n2v/0.3.2-foss-2022a-CUDA-11.7.0`
 - `module load matplotlib/3.5.2-foss-2022a`
 
 ## Get the notebook
