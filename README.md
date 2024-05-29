@@ -10,7 +10,7 @@
 
 ## [BAND Napari](module/session4_napari.md)
 
-## [BAND QuPath/CellPose/Others](moddule/session5_bioimage_analysis_other_software.md)
+## [BAND QuPath/CellPose/Others](module/session5_bioimage_analysis_other_software.md)
 
 ## [Jupyter Notebooks](module/session6_jupyter_notebook.md)
 
