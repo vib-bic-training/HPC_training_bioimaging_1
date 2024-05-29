@@ -21,6 +21,13 @@ Then double click on the notebook `n2v_demo_01_training.ipynb` to open it and ed
 output_folder = '/dodrio/scratch/projects/2024_300/<YOUR_NAME>/nv2' #TO CHANGE
 ```
 
+> [!TIP]
+> 
+> you could select another place as a `Working Directory`, byt modifying the value when you configure the launch of the jupyter interface
+>
+> ![Jupyter Working Direcotry](/images/jupyter/03_jupyter_notebooks.png)
+> 
+
 ## Additional resources
 
 ### Jupyter Notebook 
