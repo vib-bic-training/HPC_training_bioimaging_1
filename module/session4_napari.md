@@ -33,7 +33,7 @@ link:     https://raw.githubusercontent.com/vibbits/material-liascript/master/vi
 
 ## Start BAND:
 
-1. Connect to `https://tier1.hpc.ugent.be`
+1. Connect to https://tier1.hpc.ugent.be
 2. Go to `My Interactive Sessions `
 3. Configure your BAND virtual desktop for the analysis
    1. Cluster : `dodrio gpu_rome_a100`
