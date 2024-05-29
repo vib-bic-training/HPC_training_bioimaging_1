@@ -20,4 +20,9 @@ Material for the HPC training for bioimaging analysis.
 
 ## [Conclusion](module/session7.md)
 
+## Links
+- How to connect to the Open On Demand interface:  https://tier.hpc.ugent.be 
+- How to install Globus for windows: : https://docs.globus.org/globus-connect-personal/install/windows/
+- Documentation VSC: https://docs.vscentrum.be
+
 
