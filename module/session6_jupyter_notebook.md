@@ -2,7 +2,8 @@
 
 ## How to start Jupyter notebook
 Go to [the Open On Demand portal](https://tier1.hpc.ugent.be/) and log in after multifactor-authentification
-Select Jupyter notebook or Jupyterlab with the following specifications: 
+
+Select **Jupyter notebook** or Jupyterlab (maybe more **Jupyter notebook** since you can modify the `Working Directory`) with the following specifications: 
 ![image](https://github.com/vib-bic-training/HPC_training_bioimaging_1/assets/103046100/22283052-525a-45b6-a9c7-16a9d0f5b56c)
 ![image](https://github.com/vib-bic-training/HPC_training_bioimaging_1/assets/103046100/f5a5562d-a972-4f75-a8f2-5dd203158581)
 
