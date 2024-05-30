@@ -53,11 +53,11 @@ Authentification
 5. Accept Information to be Provided to Service (always or one time only) and click on Accept
 6. Globus App File Manager will be displayed in the browser tab.
 
-Installation globus personnal connector (ajouter des images)
+Installation globus personnal connector 
 --------------------------------------------------------------
 
-1. Download globus connector on your computer (go to)
-2. Install globus connector on the folder where you have rights (for KUL in My_Programs or My_Downloads) when the VPN is off.
+1. Download globus connector on your computer (if you have a windows pc go to:  https://docs.globus.org/globus-connect-personal/install/windows/ or if you have a mac pc go to: https://docs.globus.org/globus-connect-personal/install/mac/ )
+2. Install globus connector on the folder where you have  administrator rights (for KUL in My_Programs or My_Downloads) when the VPN is off.
 3. Authentificate 
 
 
