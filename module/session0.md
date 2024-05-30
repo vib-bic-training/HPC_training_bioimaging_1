@@ -137,14 +137,15 @@ Schedule day 1:
 
 | Time | Session |
 |  --- |   ---   |
-| 09:30 - 11:00 | session |
+| 09:30 - 11:00 | Introduction  and HPC infrastructure |
 | 11:00 - 11:15 | break   |
-| 11:15 - 12:45 | session |
-| 12:45 - 13:45 | lunch   |
-| 13:45 - 15:15 | session |
-| 15:15 - 15:30 | break   |
-| 15:30 - 17:00 | session |
-
+| 11:15 - 12:45 | HPC infrastructure and Data transfer |
+| 12:45 - 13:15 | lunch   |
+| 13:15 - 15:00 | Napari and Napari plugins |
+| 15:00 - 15:15 | break   |
+| 15:15 - 16:00 | Napari plugins, Cellpose, QuPath |
+| 16:00 - 16:30 | Jupyter notebook |
+| 16:30 - 17:00 | Conclusion and outlook|
 _We aim to complete up to and including exercise 2.5 during this day_
 
 </section>
