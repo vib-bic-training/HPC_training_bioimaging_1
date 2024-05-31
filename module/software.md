@@ -27,16 +27,21 @@ link:     https://raw.githubusercontent.com/vibbits/material-liascript/master/vi
 @orcid: [@0](@1)<!--class="orcid-logo-for-author-list"-->
 
 ## Software
-### CPu vs GPU
+The easiest way to use software on the VSC, is to use the pre-installed software, that is installed as an Easy Build module.
+Alternatively, you could create your own conda/mamba environment and use it in a python script or a jupyter notebook.
+More advanced ways to user/run software are: - using singularity containers
+- running nextflow workflow
+  
+### CPU vs GPU
 
-### BAND SPECIFICATION
-### Neurodesk specification
-### Jupyter notebook and lab specification
+Not all software are relying on GPU.
+CPU software: Fiji, QuPath
+GPU software: Cellpose, Omnipose, Napari and its plugins, Ilastik, ...
 
 ### Installed software
 
 <!-- style="color: magenta ;" --> 
-#### How to use a module in command line (add a ! to use this command in a jupyter notebook)
+#### How to use a Easy Build module in command line (add a ! to use this command in a jupyter notebook)
 - See loaded modules
 ```
 ml
@@ -140,7 +145,27 @@ For more information about modules: https://hprc.tamu.edu/kb/Software/GNU-Compil
 10. Matplotlib: matplotlib/3.5.2-foss-2022a or matplotlib/3.4.3-intel-2021b
 11. Bioconductor:  R-bundle-Bioconductor/3.14-foss-2021b-R-4.1.2
 
+### How to create your own conda or mamba environment
 
+Open an Interactive Shell 
+Go to the $VSC_DATA location and install miniconda
+
+
+cd $VSC_DATA 
+wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
+bash Miniconda3-latest-Linux-x86_64.sh -b -p $VSC_DATA/miniconda3
+ 
+-Make conda available to the path:
+
+
+export PATH="${VSC_DATA}/miniconda3/bin:${PATH}"
+ 
+Install mambaforge
+mamba is a reimplementation of the conda package manager in C++. It allows parallel downloading of repository data and package files using multi-threading and use libsolv for much faster dependency solving
+
+
+cd $VSC_DATA 
+wget "https://github.com/conda-forge/miniforge/releases/latest/download/Mambaforge-$(uname)-$(uname -m).sh"bash Mambaforge-$(uname)-$(uname -m).shexport PATH="${VSC_DATA}/mambaforge/bin:${PATH}"
 
 
 
