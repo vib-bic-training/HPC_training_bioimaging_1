@@ -113,14 +113,16 @@ For more information about modules: https://hprc.tamu.edu/kb/Software/GNU-Compil
  ``` ml show  IPython/8.5.0-GCCcore-11.3.0 ```
 
 #### Modules for bioimage analysis in python
-1. [Napari](https://github.com/napari/napari): Napari/0.4.15-foss-2021b
+1. [Napari](https://github.com/napari/napari): Napari/0.4.15-foss-2021b or Napari/0.4.18-foss-2022a
 2. [Cellpose](https://github.com/MouseLand/cellpose): Cellpose/2.2.2-foss-2022a or Cellpose/2.2.2-foss-2022a-CUDA-11.7.0
 3. Omnipose:  Omnipose/0.4.4-foss-2022a-CUDA-11.7.0 or  Omnipose/0.4.4-foss-2022a
 4. [stardist](https://github.com/stardist/stardist): stardist/0.8.3-foss-2021b-CUDA-11.4.1 or stardist/0.8.3-foss-2021b
 5. [AICSImageIO](https://github.com/AllenCellModeling/aicsimageio) : AICSImageIO/4.14.0-foss-2022a
 6. [devbio-napari](https://github.com/haesleinhuepf/devbio-napari) : devbio-napari/0.10.1-foss-2022a-CUDA-11.7.0
 7. [n2v](https://github.com/juglab/n2v) : n2v/0.3.2-foss-2022a-CUDA-11.7.0
-8. Monai: MONAI/1.0.1-foss-2022a 
+8. Monai: MONAI/1.0.1-foss-2022a
+9. QuPath: QuPath/0.5.0-GCCcore-12.3.0-Java-17
+10. 
 
 #### Module for spatial omics in python
 1. [Scanpy](https://github.com/scverse/scanpy): scanpy/1.9.1-foss-2021b
