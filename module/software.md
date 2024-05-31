@@ -35,8 +35,8 @@ More advanced ways to user/run software are: - using singularity containers
 ### CPU vs GPU
 
 Not all software are relying on GPU.
-CPU software: Fiji, QuPath
-GPU software: Cellpose, Omnipose, Napari and its plugins, Ilastik, ...
+- CPU software: Fiji, QuPath
+- GPU software: Cellpose, Omnipose, Napari and its plugins, Ilastik, ...
 
 ### Installed software
 
@@ -147,25 +147,63 @@ For more information about modules: https://hprc.tamu.edu/kb/Software/GNU-Compil
 
 ### How to create your own conda or mamba environment
 
-Open an Interactive Shell 
-Go to the $VSC_DATA location and install miniconda
+## Install miniconda    
 
-
+- Connect to [Tier2 via ondemand](https://ondemand.hpc.kuleuven.be/) (or to [Tier2 Ghent](https://login.hpc.ugent.be/))
+- Open an `Interactive Shell` 
+  ![image](https://github.com/vibbits/reprohack_bioimaging/assets/1775952/270dfc7f-3cbf-4d4c-943f-fb276008e8c3)
+- Go to the $VSC_DATA location and install miniconda
+```
 cd $VSC_DATA 
 wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
 bash Miniconda3-latest-Linux-x86_64.sh -b -p $VSC_DATA/miniconda3
- 
+```
 -Make conda available to the path:
-
-
+```
 export PATH="${VSC_DATA}/miniconda3/bin:${PATH}"
- 
-Install mambaforge
-mamba is a reimplementation of the conda package manager in C++. It allows parallel downloading of repository data and package files using multi-threading and use libsolv for much faster dependency solving
+```
 
-
+## Install mambaforge
+mamba is a reimplementation of the conda package manager in C++.
+It allows parallel downloading of repository data and package files using multi-threading and use libsolv for much faster dependency solving
+```bash
 cd $VSC_DATA 
-wget "https://github.com/conda-forge/miniforge/releases/latest/download/Mambaforge-$(uname)-$(uname -m).sh"bash Mambaforge-$(uname)-$(uname -m).shexport PATH="${VSC_DATA}/mambaforge/bin:${PATH}"
+wget "https://github.com/conda-forge/miniforge/releases/latest/download/Mambaforge-$(uname)-$(uname -m).sh"
+bash Mambaforge-$(uname)-$(uname -m).sh
+export PATH="${VSC_DATA}/mambaforge/bin:${PATH}"
+```
+
+## Create the conda environment
+- Create the conda environment from the yaml file
+```
+conda env create -f cellpose-omnipose-gpu.yml
+```
+or
+```
+mamba env create -f cellpose-omnipose-gpu.yml
+```
+- Make it available for the jupyter notebook
+```
+source activate cellpose-omnipose-gpu
+export PATH="${VSC_DATA}/miniconda3/bin:${PATH}
+conda install ipykernel
+python -m ipykernel install  --prefix=${VSC_HOME}/.local/ --name 'cellpose'
+```
+In this example, the conda envirmnemnt will be accessible under the name `cellpose`
+
+## Use the conda enviroment with a jupyter notebook
+
+:warning: **The ondemands interface doesn't wok well on Firefox, it's best to use Chrome**:warning:
+
+- After connecting to JupyterLab
+![image](https://github.com/vibbits/reprohack_bioimaging/assets/1775952/8ee777a7-2498-43a7-ade6-c063ea96d4de)
+- Create a new notebook `File > New > Notebook`
+![image](https://github.com/vibbits/reprohack_bioimaging/assets/1775952/39470a8d-424f-4c79-a9f6-d2a7a3f59774)
+- Select the newly create conda enviroment (e.g. here, `cellpose`)
+![image](https://github.com/vibbits/reprohack_bioimaging/assets/1775952/4db7fde7-ff6e-4287-b17c-decc1a641525)
+- Start to write the notebook
+
+
 
 
 
