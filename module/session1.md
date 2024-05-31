@@ -42,7 +42,7 @@ Sending a job into an appropriate cluster can make the difference in how much ti
 
 ### UGent section of the VSC
 
-If for your training session you are using the [UGent section]((https://docs.vscentrum.be/gent/tier2_hardware.html) of the [Flemish Supercomputing Center](https://www.vscentrum.be/), it's very likely that you will be using the Interactive and Debug cluster. As you can imagine this is not the only cluster you can use, but for ~~training purposes~~ as much as for ~~debugging~~ is good to have an interactive session in order to understand how it is working.
+If for your training session you are using the [UGent section]((https://docs.vscentrum.be/gent/tier2_hardware.html) or Tier1 of the [Flemish Supercomputing Center](https://www.vscentrum.be/), it's very likely that you will be using the gpu cluster and debug cluster through the. As you can imagine this is not the only cluster you can use, but for trai is good to have an interactive session in order to understand how it is working.
 
 <!-- style="color: #7CA1CC;" --> Each section of the **VSC** has independent managing systems. 
 
@@ -92,7 +92,7 @@ Filesystems specifics
 | $VSC_HOME | Home directory, Not the entry point to the system, same as Tier2 | ? | 3GB (fixed) | :x: |
 | $VSC_SCRATCH | Entry point to the system | ? | 3GB (fixed) | :x: |
 | $VSC_DATA | Long-term storage of large data files | ? | Depend of you account(Leuven/Gent, see above) | :x: |
-| /dodrio/scratch/projects/starting\_2023\_001/ | Temporary fast storage of ‘live’ data for calculations | ? | 10TB | ? |
+| /dodrio/scratch/projects/2024_300/| Temporary fast storage of ‘live’ data for calculations | ? | 10TB | ? |
 
 <!-- style="color: #7CA1CC;" --> \** Storage space for a group of users (Virtual Organisation or VO for short) can be increased significantly on request.
 
