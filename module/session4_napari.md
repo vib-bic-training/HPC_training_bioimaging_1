@@ -37,12 +37,18 @@ link:     https://raw.githubusercontent.com/vibbits/material-liascript/master/vi
 2. Go to `My Interactive Sessions `
 3. Configure your BAND virtual desktop for the analysis
    1. Cluster : `dodrio gpu_rome_a100`
-   2. Time (hours) : `4`
+   2. Time (hours) : `2`
    3. Number of node : `1`
-   4. Number of Core : `8 cores`
+   4. Number of Core : `12 cores (quarter) or 8 cores or 16 cores`
    5. Number of GPU per node : `1`
-![BAND configuration](/images/band/band.png
- 'BAND configuration')
+   6. Project Account: 2024_300
+   7. Reservation none 
+   8. Select advanced properties and accelerate the whole desktop
+![image](https://github.com/vib-bic-training/HPC_training_bioimaging_1/assets/103046100/cfb50903-77b4-4f97-a895-1adb8167d65d)
+![image](https://github.com/vib-bic-training/HPC_training_bioimaging_1/assets/103046100/a1b9e0b2-3953-42ee-9f6d-c24ed8f74c19)
+
+The selection of the cluster (using or not using GPU), of the time and the number of cores depends on which software you want to use (i.e. Napari relies on GPU while Fiji and QuPath do not), how big your dataset is and which analysis you want to do. In case of doubt, feel free to contact Benjamin.
+
 
 ## Access to the pre-install software
 
