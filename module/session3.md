@@ -102,13 +102,13 @@ These folders are accessible via the File Manager in the Bioimage ANalysis Deskt
 6. Checking your disk usage is explained here: https://vlaams-supercomputing-centrum-vscdocumentation.readthedocs-hosted.com/en/latest/access/managing_disk_usage.html
 
 7. Other endpoints:
-- VSC KU Leuven tier2 scratch (Tier-2 KUL): /scratch/xxx/vscxxxyy
-- VSC UGENT Tier2 filesystem (Tier-2 UGent): /scratch/gent
-- KU Leuven L drive (LUNA)
-- KU Leuven Onedrive 
-- VIB shared files
-- EMPIAR
-- BioImage archive
+- `VSC KU Leuven tier2 scratch (Tier-2 KUL)`: /scratch/xxx/vscxxxyy
+- `VSC UGENT Tier2 filesystem (Tier-2 UGent)`: /scratch/gent
+- `KU Leuven L drive (LUNA)`
+- `KU Leuven Onedrive`
+- `VIB shared files`
+- `EMPIAR`
+- `BioImage archive`
 ---------------------------------------------------
 
 ## Research data management
