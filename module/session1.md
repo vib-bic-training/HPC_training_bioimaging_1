@@ -52,7 +52,7 @@ As you probably already guessed, there is a difference if we are talking about p
 
 Overview UGent-VSC
 -------------
-<!-- style="color: magenta" --> VO = ????
+<!-- style="color: magenta" --> VO = virtual organization
 
 | Tier  | Login (vscnumber) | Personal storage space | VO Storage Space |  VO Project space |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
@@ -92,7 +92,7 @@ Filesystems specifics
 | $VSC_HOME | Home directory, Not the entry point to the system, same as Tier2 | ? | 3GB (fixed) | :x: |
 | $VSC_SCRATCH | Entry point to the system | ? | 3GB (fixed) | :x: |
 | $VSC_DATA | Long-term storage of large data files | ? | Depend of you account(Leuven/Gent, see above) | :x: |
-| /dodrio/scratch/projects/2024_300/| Temporary fast storage of ‘live’ data for calculations | ? | 10TB | ? |
+| $VSC_SCRATCH_PROJECTS_BASE/2024_300/| Temporary fast storage of ‘live’ data for calculations | ? | 20TB | upon request |
 
 <!-- style="color: #7CA1CC;" --> \** Storage space for a group of users (Virtual Organisation or VO for short) can be increased significantly on request.
 
@@ -259,7 +259,7 @@ The European model for HPC consists of three levels of computing capacity:
 > The Tier-1 services encompass :
 > - Tier-1 data (active storage and RDM)
 > - Tier-1 cloud (virtual machines and etc...)
-> - Tier-1 compute (calculations, access through terminal or Open On Demand)
+> - Tier-1 compute (calculations, access through terminal or through graphical user interface through Open On Demand)
 
 ## Creating a job what you need
 
@@ -352,7 +352,13 @@ For more information about modules: https://hprc.tamu.edu/kb/Software/GNU-Compil
 5. [AICSImageIO](https://github.com/AllenCellModeling/aicsimageio) : AICSImageIO/4.14.0-foss-2022a
 6. [devbio-napari](https://github.com/haesleinhuepf/devbio-napari) : devbio-napari/0.10.1-foss-2022a-CUDA-11.7.0
 7. [n2v](https://github.com/juglab/n2v) : n2v/0.3.2-foss-2022a-CUDA-11.7.0
-8. Monai: MONAI/1.0.1-foss-2022a 
+8. Monai: MONAI/1.0.1-foss-2022a
+9. Napari-denoiseg:napari-denoiseg/0.0.1-foss-2023a
+10. Napari-microsam: micro-sam/1.0.1-foss-2023a
+11. Napari empanada:empanada-napari/1.1.0-foss-2023a
+12. QuPath: QuPath/0.5.0-GCCcore-12.3.0-Java-17
+13. Cellprofiler: CellProfiler/4.2.4-foss-2021a
+14. Fiji: Fiji/2.9.0-Java-1.8
 
 #### Module for spatial omics in python
 1. [Scanpy](https://github.com/scverse/scanpy): scanpy/1.9.1-foss-2021b
