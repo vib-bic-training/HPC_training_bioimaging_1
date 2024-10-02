@@ -58,10 +58,8 @@ How to run a notebook for denoising with n2v
 - either use easybuild module but take care with compatibility with GCC core (see software.md)
 - use own conda environment and make your own kernel but take care with compatibility with GCC core
 
-## Command-line HPC for batch process with no GUI
-1. Containers (Apptainer)
-2. Slurm jobs
-3. Nextflow pipelines
+## Command-line HPC for batch processes with no GUI
+If you have a lot of images and you don't need GUI, you can run your analysis as a slurm job. Depending on the software and your type of analysis, you can use apptainer containers and nextflow pipelines. 
 
 
 
