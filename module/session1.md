@@ -32,14 +32,6 @@ Check here what are the clusters available in each section of the VSC. You can s
 
 Sending a job into an appropriate cluster can make the difference in how much time you wait in the "line" and how much memory you will have available for example.
 
-<!-- style="color: magenta ;" --> .................................
-
-   image to ilustrate HOME (a house) vs DATA (cinlinder for DB) vs SCRATCH (sketch paper) 
-
-   vs "Living_data" (dinamic data ilustration - no inspiration yet)
-
-<!-- style="color: magenta ;" --> .................................
-
 ### UGent section of the VSC
 
 If for your training session you are using the [UGent section]((https://docs.vscentrum.be/gent/tier2_hardware.html) or Tier1 of the [Flemish Supercomputing Center](https://www.vscentrum.be/), it's very likely that you will be using the gpu cluster and debug cluster through the. As you can imagine this is not the only cluster you can use, but for trai is good to have an interactive session in order to understand how it is working.
@@ -81,7 +73,19 @@ On top of the filesystem, each clusters will have different computational powers
 
 #### UGent TIER 1
 
-           {{0}}
+| Cluster name  | Memory (GiB) | Disk space (GB) SSD  |  GPU | GPU memory (GiB)|
+|---|---|---|---|---|
+| cpu_rome | 256 | 480 | - | - |
+| cpu_rome_512| 512 | 480 | - | - |
+| cpu_milan | 256 |480| - | - |
+| gpu_rome_a100_40| 256 | 480 | 4 NVIDIA A100  | 40 |
+| gpu_rome_a100_80 | 512 | 480 | 4 NVIDIA A100  | 80 |
+| debug_rome ** | 256| 100 | 1 NVIDIA Quadro P1000 | 4|
+
+- [debugging cluster (Used for debugging and training)](https://docs.hpc.ugent.be/Linux/interactive_debug/)
+- NB: There are two additional two clusters called cpu_rome_all and gpu_rome_a100.
+- cpu_rome_all corresponds to a combination of cpu_rome and cpu_rome_512.
+- gpu_rome_a100_all corresponds to a combination of gpu_rome_a100_40 and gpu_rome_a100_80.
 ****************************************************
 
 Filesystems specifics
@@ -110,29 +114,32 @@ Filesystems specifics
 Check the quota
 ---------------------
 
-<!-- style="color: magenta" --> To update
+<!-- style="color: magenta" 
+#### UGent TIER 1
 
 `my_dodrio_quota`
 
 ```
- Userquota:
- Disk quotas for prj 2533625 (pid 2533625):
-      Filesystem    used   quota   limit   grace   files   quota   limit   grace
-         /dodrio   2.25G   2.85G      3G       -   11832  1048576 1048576       -
-
-Quota for project gpr_compute_starting_2023_001:
-Disk quotas for prj 2640724 (pid 2640724):
+Userquota:
+Disk quotas for prj 2534840 (pid 2534840):
      Filesystem    used   quota   limit   grace   files   quota   limit   grace
-        /dodrio     84k    9.5T     10T       -      31  1048576 1048576       -
+        /dodrio  1.709G   2.85G      3G       -   24566  1048576 1048576       -
+
+Quota for project gpr_compute_2024_300:
+Disk quotas for prj 2641240 (pid 2641240):
+     Filesystem    used   quota   limit   grace   files   quota   limit   grace
+        /dodrio   15.4T     19T     20T       -  739564  1048576 1048576       -
 ```
 
-On Tier1, `my_dodrio_quota` give the space available on the `$VSC_SCRATCH` (first result) and on the one on our project (in that case `/dodrio/scratch/projects/starting_2023_001/`)
+On Tier1, `my_dodrio_quota` give the space available on the `$VSC_SCRATCH` (first result) and on the one on our project (in that case `/dodrio/scratch/projects/2024_300/`)
 
 ---------------------------------------------------------
 
 ****************************************************
 
 #### UGent TIER 2
+
+ `show_quota` or go to https://account.vscentrum.be for a general overview
 
            {{0}}
 ****************************************************
@@ -163,7 +170,6 @@ Overview KULeuven-VSC
 
 <!-- style="color: magenta" --> To update
 
-<!-- style="color: magenta" --> VO ???
 
 | Tier  | Login (vscnumber) | Personal storage space | VO Storage Space |  VO Project space |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
@@ -240,7 +246,6 @@ The European model for HPC consists of three levels of computing capacity:
 
 **By contrast, Tier-3 corresponds to single computers (your own infrastructure)**
 
-(see figure xxx made by Christof)
 
 > Flemish super computing centre (VSC)
 >
