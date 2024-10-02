@@ -178,18 +178,31 @@ Overview KULeuven-VSC
 Clusters specifics at KULeuven - VSC
 -----------------------------------
 
-| Cluster name (CPU model) | Memory (GiB) | Disk space  | GPU |
-|---|---|---|---|
-| Skylake | 192 | 200 GB SSD | - |
-| Cascadelake | 192 | 200 GB SSD | - |
-| Bigman | 768 | 200 GB SSD | - |
-| GPU_p100 | 192 | 200 GB SSD | 4 NVIDIA P100 |
-| GPU_v100 | 768 | 200 GB SSD | 8 NVIDIA V100 |
-| AMD | 256 | 200 GB SSD | AMD |
+#### Tier 2 KUL Genius
+
+| Cluster name | Memory (GiB) | Disk space  | GPU | GPU memory (GiB)|
+|---|---|---|---|---|
+| batch/batch_long | 192 | 200 GB SSD | - | -|
+| interactive | 192 | 200 GB SSD | - | -|
+| bigmem| 768 | 200 GB SSD | - | - |
+| gpu_p100 | 192 | 200 GB SSD | 4 NVIDIA P100 |16|
+| GPU_v100 | 768 | 200 GB SSD | 8 NVIDIA V100 | 32|
+|amd| 256 | 200 GB SSD | - |-|
 
 -----------------------------------------------
 
-####  Leuven TIER 2
+####  Tier 2 KUL wICE
+
+| Cluster name | Memory (GiB) | Disk space  | GPU | GPU memory (GiB)|
+|---|---|---|---|---|
+| batch/batch_long | 256 | 960 GB SSD | - | -|
+| batch_sapphirerapids/batch_sapphirerapids_long| 256 | 960 GB SSD | - | -|
+| bigmem | 256 | 2048 GB SSD | - | - |
+| hugemem | 960 | 8000 GB SSD | - | -|
+| gpu | 512| 960 GB SSD | 4 NVIDIA A100 SXM4 | 80 |
+| gpu_h100 | 768 | 960 GB SSD | 4 NVIDIA H100 | 80|
+| interactive and gpu_a100_debug | 512| 960 GB SSD | 1 NVIDIA A100 | 80 |
+
 
            {{0}}
 ****************************************************
